@@ -8,7 +8,7 @@ import testBase.BaseClass;
 public class TCOO4_LoanAmountCalculators extends BaseClass {
 
 	@Test
-	public void LoanAmountCalculatorValidation() {
+	public void LoanAmountCalculatorUIValidation() {
 		logger.info("***Loan Amount validation initiated***");
 		LoanAmountCalculatorPage l=new LoanAmountCalculatorPage(driver);
 		l.SwitchtototalAmount();

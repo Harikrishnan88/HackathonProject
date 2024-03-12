@@ -8,41 +8,17 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC002_HomeLoanValidation">
-        <methods>
-          <include name="teardown"/>
-          <include name="storingThedataIntoExcel"/>
-          <include name="switchToLoanEmiCalculatorPage"/>
-          <include name="setup"/>
-          <include name="HomeLoanValidation"/>
-        </methods>
-      </class> <!-- testCases.TC002_HomeLoanValidation -->
-      <class name="testCases.TCOO5_LoanTenureValidation">
-        <methods>
-          <include name="teardown"/>
-          <include name="LoanTenureUIvalidation"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TCOO5_LoanTenureValidation -->
       <class name="testCases.TC003_HomeLoanEMIValidation">
         <methods>
           <include name="teardown"/>
-          <include name="Uivalidation"/>
+          <include name="loanCalculatorPageValidation"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC003_HomeLoanEMIValidation -->
-      <class name="testCases.TCOO4_LoanAmountCalculators">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="LoanAmountCalculatorValidation"/>
-        </methods>
-      </class> <!-- testCases.TCOO4_LoanAmountCalculators -->
       <class name="testCases.TC001_CarEmiValidation">
         <methods>
           <include name="teardown"/>
-          <include name="car_Emi_validation"/>
-          <include name="car_emiCalculation"/>
+          <include name="homePagevalidation"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC001_CarEmiValidation -->

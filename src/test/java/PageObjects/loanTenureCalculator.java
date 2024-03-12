@@ -3,6 +3,9 @@ package PageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+import testBase.BaseClass;
 
 public class loanTenureCalculator extends BasePage{
 	
@@ -42,30 +45,21 @@ public class loanTenureCalculator extends BasePage{
 	}
 	
 	public void LoanTenureUivalidation() {
-		if(loanAmountcheckbox.isEnabled()==true) {
-			System.out.println("LoanAmountcheckBox is validated");
-		}
-		if(loanamountslider.isEnabled()==true) {
-			System.out.println("Loan amountSlider is validated");
-		}
-		if(emicheckbox.isEnabled()==true) {
-			System.out.println("Emicheckbox is validated");
-		}
-		if(emislider.isEnabled()==true) {
-			System.out.println("EmiSlider is validated");
-		}
-		if(interestcheckbox.isEnabled()==true) {
-			System.out.println("InterestcheckBox is validated");
-		}
-		if(interestslider.isEnabled()==true) {
-			System.out.println("Interest slider is validated");
-		}
-		if(feescheckBox.isEnabled()==true) {
-			System.out.println("fees CheckBox is validated");
-			
-		}
-		if(feesslider.isEnabled()==true) {
-			System.out.println("Fees slider is validated");
-		}
+
+		Assert.assertTrue(loanAmountcheckbox.isEnabled());
+		
+		Assert.assertTrue(loanamountslider.isEnabled());
+
+		Assert.assertTrue(emicheckbox.isEnabled());
+		
+		Assert.assertTrue(emislider.isEnabled());
+
+		Assert.assertTrue(interestcheckbox.isEnabled());
+
+		Assert.assertTrue(interestslider.isEnabled());
+
+		Assert.assertTrue(feescheckBox.isEnabled());
+
+		Assert.assertTrue(feesslider.isEnabled());
 	}
 }

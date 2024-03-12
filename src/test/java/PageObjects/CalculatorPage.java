@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 import Utilities.ExcelUtilities;
 
@@ -17,7 +18,8 @@ public class CalculatorPage extends BasePage {
 		super(driver);
 	}
 	 public JavascriptExecutor js= (JavascriptExecutor) driver;
-	 
+	 @FindBy(xpath="//div[@class='page-header']/h1")
+	 WebElement HomePagetitle;
 	 
 	@FindBy(xpath="//*[@class='loanproduct-nav']/li[@id='car-loan']")
 	WebElement clickCarLoan;
@@ -46,7 +48,11 @@ public class CalculatorPage extends BasePage {
 	@FindBy(xpath="(//*[@class='btn btn-secondary'])[1]")
 	WebElement clickonmonth;
 	
-	
+	public void homePagevalidation() {
+		String webPagetitle="EMI Calculator for Home Loan, Car Loan & Personal Loan in India";
+		String expectedtitle=driver.getTitle();
+		Assert.assertEquals(webPagetitle, expectedtitle);
+	}
 	public void clickCarLoan() {
 		clickCarLoan.click();
 	}

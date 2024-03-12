@@ -4,6 +4,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class loanCalculatorPage extends BasePage{
 	public  loanCalculatorPage(WebDriver driver) {
@@ -51,19 +52,20 @@ public class loanCalculatorPage extends BasePage{
 		clickOnLoanCalculator.click();
 		
 	}
+	public void validateloanCalculatorPage() {
+		String webPagetitle="Loan Calculator — Calculate EMI, Affordability, Tenure & Interest Rate";
+		String expectedtitle=driver.getTitle();
+		Assert.assertEquals(webPagetitle, expectedtitle);
+	}
 	public void LoanEMIvalidation() {
-		if(EmiamountCheckbox.isEnabled()==true) {
-			System.out.println("EmiAmountcheckBox is validated");
-		}
-		if(EmiamountSlider.isEnabled()==true) {
-			System.out.println("EMI Slider is validated");
-		}
-		if(Emiinterestcheckbox.isEnabled()==true) {
-			System.out.println("EmiInterestcheckbox is validated");
-		}
-		if(Emiinterestslider.isEnabled()==true) {
-			System.out.println("EmiInterestSlider is validated");
-		}
+		Assert.assertTrue(EmiamountCheckbox.isEnabled());
+
+		Assert.assertTrue(EmiamountSlider.isEnabled());
+
+		Assert.assertTrue(Emiinterestcheckbox.isEnabled());
+
+		Assert.assertTrue(Emiinterestslider.isEnabled());
+		
 		String value1=EmiTensureScale1.getText();
 		EmiMonth.click();
 		String value2=EmiTensureScale2.getText();
@@ -73,12 +75,10 @@ public class loanCalculatorPage extends BasePage{
 		else {
 			System.out.println("Emi Tenure is validated");
 		}
-		if(FeesCheckbox.isEnabled()==true) {
-			System.out.println("FeesCheck box is validated");
-		}
-		if(Feesslider.isEnabled()==true) {
-			System.out.println("FeesSlider is validated");
-		}
+
+		Assert.assertTrue(FeesCheckbox.isEnabled());
+
+		Assert.assertTrue(Feesslider.isEnabled());
 		
 		
 	}

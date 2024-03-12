@@ -1,0 +1,48 @@
+14:39:59.872 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+14:39:59.882 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+14:39:59.883 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+14:39:59.885 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+14:39:59.886 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+14:39:59.887 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+14:39:59.888 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+14:39:59.890 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+14:39:59.892 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+15:16:00.757 [main] INFO  testCases.TC001_CarEmiValidation - ***Interest Rate for car Loan for Current Year is initiated
+15:16:05.573 [main] INFO  testCases.TC001_CarEmiValidation - ***Relevant details has been entered***
+15:16:05.905 [main] INFO  testCases.TC001_CarEmiValidation - ****Calculate total Amount****
+15:16:06.000 [main] INFO  testCases.TC001_CarEmiValidation - ***Total Emi amount has been calculated****
+15:16:06.365 [main] INFO  testCases.TC001_CarEmiValidation - ***Principal Amount and Interest amount for one month is initiated****
+15:16:06.486 [main] INFO  testCases.TC001_CarEmiValidation - ***Principal Amount and Interest amount for one month is calculated
+15:16:06.776 [main] INFO  testCases.TC001_CarEmiValidation - **Navigate to Loan Emi Calculator****
+15:16:19.756 [main] INFO  testCases.TC001_CarEmiValidation - **** Enter the relevant details***
+15:16:25.127 [main] INFO  testCases.TC001_CarEmiValidation - ****The details have been entered successfuly
+15:16:25.436 [main] INFO  testCases.TC001_CarEmiValidation - ***The table values is stored in the excel**
+15:16:42.536 [main] INFO  testCases.TC001_CarEmiValidation - ****Emi validation initiated*****
+15:16:43.151 [main] INFO  testCases.TC001_CarEmiValidation - ***EMI validation ended***
+15:16:43.388 [main] INFO  testCases.TC001_CarEmiValidation - ***Loan Amount validation initiated***
+15:16:44.436 [main] INFO  testCases.TC001_CarEmiValidation - ***Loan Amount validation ended
+15:16:44.714 [main] INFO  testCases.TC001_CarEmiValidation - *** LoanTenure validation initiated***
+15:16:45.475 [main] INFO  testCases.TC001_CarEmiValidation - ***Loan Tenure validation ended
+12:16:21.001 [main] INFO  testCases.TC001_CarEmiValidation - ***Interest Rate for car Loan for Current Year is initiated
+12:16:25.673 [main] INFO  testCases.TC001_CarEmiValidation - ***Relevant details has been entered***
+12:16:26.018 [main] INFO  testCases.TC001_CarEmiValidation - ****Calculate total Amount****
+12:16:26.141 [main] INFO  testCases.TC001_CarEmiValidation - ***Total Emi amount has been calculated****
+12:16:26.528 [main] INFO  testCases.TC001_CarEmiValidation - ***Principal Amount and Interest amount for one month is initiated****
+12:16:26.688 [main] INFO  testCases.TC001_CarEmiValidation - ***Principal Amount and Interest amount for one month is calculated
+12:16:26.976 [main] INFO  testCases.TC001_CarEmiValidation - **Navigate to Loan Emi Calculator****
+12:17:36.763 [main] INFO  testCases.TC001_CarEmiValidation - **** Enter the relevant details***
+12:17:40.798 [main] INFO  testCases.TC001_CarEmiValidation - ****The details have been entered successfuly
+12:17:41.053 [main] INFO  testCases.TC001_CarEmiValidation - ***The table values is stored in the excel**
+12:18:21.553 [main] INFO  testCases.TC001_CarEmiValidation - ****Emi validation initiated*****
+12:18:22.081 [main] INFO  testCases.TC001_CarEmiValidation - ***EMI validation ended***
+12:18:22.360 [main] INFO  testCases.TC001_CarEmiValidation - ***Loan Amount validation initiated***
+12:18:23.208 [main] INFO  testCases.TC001_CarEmiValidation - ***Loan Amount validation ended
+12:18:23.465 [main] INFO  testCases.TC001_CarEmiValidation - *** LoanTenure validation initiated***
+12:18:24.089 [main] INFO  testCases.TC001_CarEmiValidation - ***Loan Tenure validation ended
+12:44:20.904 [main] INFO  testCases.TC001_CarEmiValidation - ***Interest Rate for car Loan for Current Year is initiated
+12:45:23.226 [main] INFO  testCases.TC001_CarEmiValidation - ***Relevant details has been entered***
+12:45:23.969 [main] INFO  testCases.TC001_CarEmiValidation - ****Calculate total Amount****
+12:45:24.293 [main] INFO  testCases.TC001_CarEmiValidation - ***Total Emi amount has been calculated****
+12:45:24.985 [main] INFO  testCases.TC001_CarEmiValidation - ***Principal Amount and Interest amount for one month is initiated****
+12:45:25.231 [main] INFO  testCases.TC001_CarEmiValidation - ***Principal Amount and Interest amount for one month is calculated
+12:45:25.557 [main] INFO  testCases.TC001_CarEmiValidation - **Navigate to Loan Emi Calculator****

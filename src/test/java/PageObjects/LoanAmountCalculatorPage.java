@@ -3,6 +3,7 @@ package PageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class LoanAmountCalculatorPage extends BasePage {
 	public  LoanAmountCalculatorPage(WebDriver driver) {
@@ -39,23 +40,21 @@ public class LoanAmountCalculatorPage extends BasePage {
 	@FindBy(xpath="//div[@id='loanfeesslider']")
 	WebElement Feesslider;
 	
+
 	public void SwitchtototalAmount() {
 		clickonloanAmount.click();
 	}
 	
 	public void LoanAmountvalidation() {
-		if(EmiTextbox.isEnabled()==true) {
-			System.out.println("AmountcheckBox is validated");
-		}
-		if(Emislider.isEnabled()==true) {
-			System.out.println("Amount Slider is validated");
-		}
-		if(Interestcheckbox.isEnabled()==true) {
-			System.out.println("AmountInterestcheckbox is validated");
-		}
-		if(Interestslider.isEnabled()==true) {
-			System.out.println("AmountInterestSlider is validated");
-		}
+
+		Assert.assertTrue(EmiTextbox.isEnabled());
+
+		Assert.assertTrue(Emislider.isEnabled());
+
+		Assert.assertTrue(Interestcheckbox.isEnabled());
+
+		Assert.assertTrue(Interestslider.isEnabled());
+		
 		String value1=InterestTenureslider.getText();
 		clickonMonth.click();
 		WebElement monthTenure=InterestTenureslider;
@@ -66,12 +65,10 @@ public class LoanAmountCalculatorPage extends BasePage {
 		else {
 			System.out.println("Amount Tenure is validated");
 		}
-		if(FeesCheckbox.isEnabled()==true) {
-			System.out.println("FeesCheck box is validated");
-		}
-		if(Feesslider.isEnabled()==true) {
-			System.out.println("FeesSlider is validated");
-		}	
+
+		Assert.assertTrue(FeesCheckbox.isEnabled());
+
+		Assert.assertTrue(Feesslider.isEnabled());
 	
 }
 }	

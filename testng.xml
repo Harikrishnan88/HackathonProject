@@ -14,6 +14,6 @@
   <class name="testCases.TC003_HomeLoanEMIValidation"></class>
   <class name="testCases.TCOO4_LoanAmountCalculators"></class>
   <class name="testCases.TCOO5_LoanTenureValidation"></class>
-  </classes>
+  </classes> 
   </test> <!-- Test -->
 </suite> <!-- Suite -->

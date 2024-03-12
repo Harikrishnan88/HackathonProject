@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 import Utilities.ExcelUtilities;
 
@@ -16,6 +17,8 @@ public class HomeLoanEmiPage extends BasePage{
 	public  HomeLoanEmiPage(WebDriver driver) {
 		super(driver);
 	}
+	
+	
 	@FindBy(xpath="//*[@title='Calculators']")
 	WebElement clickonCalculator;
 	
@@ -60,6 +63,12 @@ public class HomeLoanEmiPage extends BasePage{
 	
 	@FindBy(xpath="//table[@class='noextras']/tbody")
 	WebElement table;
+	
+	public void validatetitle() {
+		String webPagetitle="Home Loan EMI Calculator with Prepayments, Taxes & Insurance";
+		String expectedtitle=driver.getTitle();
+		Assert.assertEquals(webPagetitle, expectedtitle);
+	}
 	
 	public void clickOnCalculator() {
 		  clickonCalculator.click();;
